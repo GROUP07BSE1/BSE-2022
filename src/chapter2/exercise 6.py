@@ -7,3 +7,4 @@ result2 = int(sample4) - int(sample2)
 value1 = float(result1 ** 2) + float(result2 ** 2)
 distance = value1 ** 0.5
 print(distance)
+
