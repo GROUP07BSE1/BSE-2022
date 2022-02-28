@@ -1,9 +1,6 @@
 list1 = []
-
 count = 0
-
 total = 0.0
-
 sample = input("enter number:  ")
 try:
     while sample != "done":
