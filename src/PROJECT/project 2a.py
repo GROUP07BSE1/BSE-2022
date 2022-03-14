@@ -1,12 +1,12 @@
+
 # create two files - project2_a.py
 #				   - project2_b.py
 
 
 def extract_relevant_parts(line):
 	"""
-	This fucntion takes in a line and extracts the 
+	This fucntion takes in a line and extracts the
 	year, country, income, percentage, region
-
 	The it returns them to the client[calling code]
 	"""
 
@@ -14,8 +14,8 @@ def extract_relevant_parts(line):
 
 	# Afghanistan          WB_LI   11 Eastern Mediterranean     1980
 
-	
-		
+
+
 	# 1.get year- find space begining from the right
 	year_part = line[line.rfind(" ")+1:].strip()
 
@@ -25,7 +25,7 @@ def extract_relevant_parts(line):
 	# 2. country part
 	country_part = line[:51]
 
-	#  WB_LI   11 Eastern Mediterranean 
+	#  WB_LI   11 Eastern Mediterranean
 	l_w_c_y = line[51:line.rfind(year_part)].strip()
 
 	# 3. got the income level using the line-without-country and year line
@@ -145,11 +145,5 @@ def main_function():
 
 
 
-# call the main function
+
 main_function()
-
-
-
-	
-	
-
